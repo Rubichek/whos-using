@@ -1,0 +1,273 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+
+.menu .lang {
+    font-size: 22px;
+    font-family: Tourney;
+    font-weight: 600;
+    padding: 0;
+    flex: 1;
+    margin: 0;
+}
+
+.menu .lang {
+    margin-right: 50px;
+}
+
+.lang li {
+    line-height: normal;
+}
+
+.lang,
+.menu ul {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 12px 0 0;
+    margin-bottom: 83px;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    color: black;
+    font-size: 22px;
+    font-family: Staatliches;
+    font-weight: 400;
+    letter-spacing: 0.66px;
+    margin: 0 10px 0 0;
+    line-height: normal;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: Staatliches;
+    font-weight: 400;
+    letter-spacing: 0.66px;
+}
+
+/* END Header */
+
+.headind {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    width: 100px;
+    height: 8px;
+    background: black;
+    margin: 0;
+}
+
+.divider-text {
+    color: black;
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    margin-left: 20px;
+}
+
+.cards {
+    border-top: 1px #BFBFBF solid;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px #BFBFBF solid;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.facebook-card,
+.instagram-card,
+.shopify-card,
+.skype-card,
+.pinterest-card,
+.wix-card,
+.saleforse-card,
+.soundcloud-card {
+    width: 270px;
+    height: 180px;
+    perspective: 1000px;
+}
+
+.facebook-card-inner,
+.instagram-card-inner,
+.shopify-card-inner,
+.skype-card-inner,
+.pinterest-card-inner,
+.wix-card-inner,
+.saleforse-card-inner,
+.soundcloud-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+}
+
+.facebook-card:hover .facebook-card-inner,
+.instagram-card:hover .instagram-card-inner,
+.skype-card:hover .skype-card-inner,
+.pinterest-card:hover .pinterest-card-inner,
+.wix-card:hover .wix-card-inner,
+.saleforse-card:hover .saleforse-card-inner,
+.soundcloud-card:hover .soundcloud-card-inner {
+    transform: rotateY(180deg);
+    background-color: black;
+}
+
+.shopify-card:hover .shopify-card-inner {
+    transform: rotateY(180deg);
+    background-color: #E6E6E6;
+}
+
+.facebook-card-front, .facebook-card-back,
+.instagram-card-front, .instagram-card-back,
+.shopify-card-front, .shopify-card-back,
+.skype-card-front, .skype-card-back,
+.pinterest-card-front, .pinterest-card-back,
+.wix-card-front, .wix-card-back,
+.saleforse-card-front, .saleforse-card-back,
+.soundcloud-card-front, .soundcloud-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.facebook-card-front-img {
+    background-color: #E6E6E6;
+    padding: 70px 35px;
+    border-radius: 8px;
+}
+
+.instagram-card-front-img {
+    background-color: #E6E6E6;
+    padding: 67.5px 35px 55.5px;
+    border-radius: 8px;
+}
+
+.shopify-card-front-img {
+    background-color: black;
+    padding: 61.5px 35px;
+    border-radius: 8px;
+}
+
+.skype-card-front-img {
+    background-color: #E6E6E6;
+    padding: 59px 35px;
+    border-radius: 8px;
+}
+
+.pinterest-card-front-img {
+    background-color: #E6E6E6;
+    padding: 66px 35px;
+    border-radius: 8px;
+}
+
+.wix-card-front-img {
+    background-color: #E6E6E6;
+    padding: 56px 35px;
+    border-radius: 8px;
+}
+
+.saleforse-card-front-img {
+    background-color: #E6E6E6;
+    padding: 20px 35px;
+    border-radius: 8px;
+}
+
+.soundcloud-card-front-img {
+    background-color: #E6E6E6;
+    padding: 33px 35px;
+    border-radius: 8px;
+}
+
+
+
+.facebook-card-back-img {
+    background-color: black;
+    padding: 70px 35px;
+    border-radius: 8px;
+}
+
+.instagram-card-back-img {
+    background-color: black;
+    padding: 67.5px 35px 55.5px;
+    border-radius: 8px;
+}
+
+.shopify-card-back-img {
+    background-color: #E6E6E6;
+    padding: 61.5px 35px;
+    border-radius: 8px;
+}
+
+.skype-card-back-img {
+    background-color: black;
+    padding: 59px 35px;
+    border-radius: 8px;
+}
+
+.pinterest-card-back-img {
+    background-color: black;
+    padding: 66px 35px;
+    border-radius: 8px;
+}
+
+.wix-card-back-img {
+    background-color: black;
+    padding: 56px 35px;
+    border-radius: 8px;
+}
+
+.saleforse-card-back-img {
+    background-color: black;
+    padding: 20px 35px;
+    border-radius: 8px;
+}
+
+.soundcloud-card-back-img {
+    background-color: black;
+    padding: 33px 35px;
+    border-radius: 8px;
+}
+
+.facebook-card-back,
+.instagram-card-back,
+.shopify-card-back,
+.skype-card-back,
+.pinterest-card-back,
+.wix-card-back,
+.saleforse-card-back,
+.soundcloud-card-back {
+    transform: rotateY(180deg);
+}
